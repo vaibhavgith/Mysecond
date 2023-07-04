@@ -1,5 +1,6 @@
 var index=0;
 
+
 function changeColors(){
     var colors=["red","blue","orange","green"];
 
