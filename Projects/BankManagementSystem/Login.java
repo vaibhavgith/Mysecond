@@ -108,7 +108,7 @@ public class Login extends JFrame implements ActionListener {
         } else if (e.getSource() == login) {
 
 
-            Conn conn=new Conn();
+
             String cnum=cardtext.getText();
             String pnum=pintext.getText();
 
@@ -116,9 +116,13 @@ public class Login extends JFrame implements ActionListener {
             //bug must be at query or in sql table names
 
 
-            String query="select * from login " ;
-               //     "where  cardnum = '"+cnum+"' and pin = '"+pnum+"'";
+
             try{
+
+                Conn conn=new Conn();
+
+                String query="select * from login";
+                //where  cardnum = '"+cnum+"' and pin = '"+pnum+"'";
 //                String query1 = query;
                 ResultSet rs = conn.st.executeQuery(query);
                if (rs.next())

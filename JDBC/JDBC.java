@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.*;
 
 
-class main {
+class Main {
     public static void main(String[] args) {
          /*
         Why we use exceptional handling in jdbc == because MySql is external entity so there
