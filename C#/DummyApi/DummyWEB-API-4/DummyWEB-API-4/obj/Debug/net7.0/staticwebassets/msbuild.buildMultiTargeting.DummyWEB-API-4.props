@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DummyWEB-API-4.props" />
+</Project>
